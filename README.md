@@ -6,6 +6,7 @@ Linkana is an interactive admin dashboard for managing IoT devices. It's a demon
 
 - Clone this repo.
 - Navigate to the project folder.
+- Run `npm install`.
 - Run `npm start` and start playing with it.
 
 ### What can you do?
