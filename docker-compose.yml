@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: linkana-frontend:latest
+    ports:
+      - 3000:80
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == worker]

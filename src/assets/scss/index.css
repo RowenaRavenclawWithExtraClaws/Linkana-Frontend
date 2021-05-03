@@ -1,0 +1,440 @@
+.border-style {
+  border: 1px solid #cf4d22;
+}
+
+.border-bottom-style {
+  border-bottom: 1px solid #cf4d22;
+}
+
+.but-style {
+  border-color: #cf4d22;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.no-data-margin {
+  margin-top: 7.5%;
+}
+
+.breadcrumb-action {
+  cursor: pointer;
+  float: right;
+}
+
+.grid-layout-card {
+  cursor: move;
+}
+
+.item-count {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.setting-card-title {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.but-div {
+  padding: 0;
+  float: right;
+}
+
+.card-footer {
+  background-color: #2a3042;
+}
+
+/* auto complete styles */
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  width: 100%;
+}
+.autocomplete-items {
+  position: absolute;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #2e3548;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #636e72;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #222736 !important;
+  color: #ffffff;
+}
+
+.fullscreen-icon {
+  float: right;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.popover-margin {
+  margin-left: 10px;
+}
+
+.action-style {
+  margin-left: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.chart-dropdown {
+  float: right;
+  margin-left: 10px;
+}
+
+.command-icon {
+  margin-left: 20px;
+  margin-top: 7px;
+  cursor: pointer;
+  float: right;
+}
+
+.sort-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* xterm styling */
+
+.xterm {
+  font-feature-settings: "liga" 0;
+  position: relative;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.xterm.focus,
+.xterm:focus {
+  outline: none;
+}
+
+.xterm .xterm-helpers {
+  position: absolute;
+  top: 0;
+  /**
+   * The z-index of the helpers must be higher than the canvases in order for
+   * IMEs to appear on top.
+   */
+  z-index: 5;
+}
+
+.xterm .xterm-helper-textarea {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  /* Move textarea out of the screen to the far left, so that the cursor is not visible */
+  position: absolute;
+  opacity: 0;
+  left: -9999em;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: -5;
+  /** Prevent wrapping so the IME appears against the textarea at the correct position */
+  white-space: nowrap;
+  overflow: hidden;
+  resize: none;
+}
+
+.xterm .composition-view {
+  /* TODO: Composition position got messed up somewhere */
+  background: #000;
+  color: #fff;
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.xterm .composition-view.active {
+  display: block;
+}
+
+.xterm .xterm-viewport {
+  /* On OS X this is required in order for the scroll bar to appear fully opaque */
+  background-color: #000;
+  overflow-y: auto;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.xterm .xterm-screen {
+  position: relative;
+}
+
+.xterm .xterm-screen canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.xterm .xterm-scroll-area {
+  visibility: hidden;
+}
+
+.xterm-char-measure-element {
+  display: inline-block;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -9999em;
+  line-height: normal;
+}
+
+.xterm {
+  cursor: text;
+}
+
+.xterm.enable-mouse-events {
+  /* When mouse events are enabled (eg. tmux), revert to the standard pointer cursor */
+  cursor: default;
+}
+
+.xterm.xterm-cursor-pointer {
+  cursor: pointer;
+}
+
+.xterm.column-select.focus {
+  /* Column selection mode */
+  cursor: crosshair;
+}
+
+.xterm .xterm-accessibility,
+.xterm .xterm-message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  color: transparent;
+}
+
+.xterm .live-region {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.xterm-dim {
+  opacity: 0.5;
+}
+
+.xterm-underline {
+  text-decoration: underline;
+}
+
+/* others */
+
+.app-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.app-margin-top {
+  margin-top: 3%;
+}
+
+.loc-icon-online {
+  color: #00b894;
+}
+
+.loc-icon-offline {
+  color: black;
+}
+
+.special-map {
+  height: 80%;
+}
+
+.ai-card-title {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.ai-mic {
+  text-align: center;
+  color: #cf4d22;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+/* pulse animation */
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+  -webkit-animation: pulse 2s linear infinite;
+  animation: pulse 2s linear infinite;
+}
+
+/* flash animation */
+@keyframes flash {
+  0%,
+  100%,
+  50% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.faa-flash.animated,
+.faa-flash.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-flash {
+  -webkit-animation: flash 2s ease infinite;
+  animation: flash 2s ease infinite;
+}
+
+.faa-flash.animated.faa-fast,
+.faa-flash.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-fast {
+  -webkit-animation: flash 1s ease infinite;
+  animation: flash 1s ease infinite;
+}
+
+.faa-flash.animated.faa-slow,
+.faa-flash.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-slow {
+  -webkit-animation: flash 3s ease infinite;
+  animation: flash 3s ease infinite;
+}
+
+.record_indicator {
+  display: inline-block;
+  width: 3px;
+  height: 50px;
+  margin: 0 7px;
+  background: currentColor;
+  transform: scaleY(0.5);
+  opacity: 0.25;
+}
+
+.record_indicator_alt {
+  display: inline-block;
+  width: 3px;
+  height: 50px;
+  margin: 0 7px;
+  background: #2a3042;
+  transform: scaleY(0.5);
+  opacity: 0.25;
+}
+
+/* profile image style */
+
+.cuddler {
+  position: relative;
+}
+
+.prof-div {
+  text-align: center;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.prof-image {
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: rgb(225, 97, 35, 0.4);
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-on-img {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.cuddler:hover .prof-image {
+  opacity: 0.3;
+}
+
+.cuddler:hover .middle {
+  opacity: 1;
+}
+
+/* tour icon style */
+
+.tour-icon {
+  margin-top: 28px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.offline-color {
+  color: #a6b0cf;
+}
+
+.online-color {
+  color: #00b894;
+}

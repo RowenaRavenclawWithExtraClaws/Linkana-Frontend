@@ -1,0 +1,20 @@
+image: node:14.14.0-buster-slim
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - test
+
+test:
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm run test
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "master"
+      when: manual
